@@ -95,16 +95,16 @@ tab_na_cestoti_close$cumulative_freq <- cumsum(tab_na_cestoti_close$Freq)
 
 # HISTOGRAM---------------------------------------------------------------------
 colors = c("red", "yellow", "green", "violet") 
-hist(amzn$sredna_t_open, col=colors, xlab="Ñðåäíè òî÷êè", ylab="Áðî¼ íà ïî¼àâóâàœà", main="Õèñòîãðàì çà êîëîíà Open" )
+hist(amzn$sredna_t_open, col=colors, xlab="Ð¡Ñ€ÐµÐ´Ð½Ð¸ Ñ‚Ð¾Ñ‡ÐºÐ¸", ylab="Ð‘Ñ€Ð¾Ñ˜ Ð½Ð° Ð¿Ð¾Ñ˜Ð°Ð²ÑƒÐ²Ð°ÑšÐ°", main="Ð¥Ð¸ÑÑ‚Ð¾Ð³Ñ€Ð°Ð¼ Ð·Ð° ÐºÐ¾Ð»Ð¾Ð½Ð° Open" )
 
 #-------------------------------------------------------------------------------
 
 # POLIGON ----------------------------------------------------------------------
-plot( tab_na_cestoti_open$frekvencii_open, tab_na_cestoti_open$relative_Freq, type="b", col="red", main="Ãðàôèê çà Ðåëàòèâíà Ôðåêâåíöè¼à", xlab="Èíòåðâàëè", ylab="Ôðåêâåíöèè" )
-lines( tab_na_cestoti_open$frekvencii_open, tab_na_cestoti_open$relative_Freq, type="l", col="red", main="Ãðàôèê çà Ðåëàòèâíà Ôðåêâåíöè¼à", xlab="Èíòåðâàëè", ylab="Ôðåêâåíöèè" )
+plot( tab_na_cestoti_open$frekvencii_open, tab_na_cestoti_open$relative_Freq, type="b", col="red", main="Ð“Ñ€Ð°Ñ„Ð¸Ðº Ð·Ð° Ð ÐµÐ»Ð°Ñ‚Ð¸Ð²Ð½Ð° Ð¤Ñ€ÐµÐºÐ²ÐµÐ½Ñ†Ð¸Ñ˜Ð°", xlab="Ð˜Ð½Ñ‚ÐµÑ€Ð²Ð°Ð»Ð¸", ylab="Ð¤Ñ€ÐµÐºÐ²ÐµÐ½Ñ†Ð¸Ð¸" )
+lines( tab_na_cestoti_open$frekvencii_open, tab_na_cestoti_open$relative_Freq, type="l", col="red", main="Ð“Ñ€Ð°Ñ„Ð¸Ðº Ð·Ð° Ð ÐµÐ»Ð°Ñ‚Ð¸Ð²Ð½Ð° Ð¤Ñ€ÐµÐºÐ²ÐµÐ½Ñ†Ð¸Ñ˜Ð°", xlab="Ð˜Ð½Ñ‚ÐµÑ€Ð²Ð°Ð»Ð¸", ylab="Ð¤Ñ€ÐµÐºÐ²ÐµÐ½Ñ†Ð¸Ð¸" )
 
-plot( tab_na_cestoti_close$frekvencii_close, tab_na_cestoti_close$relative_Freq, type="b", col="red", main="Ãðàôèê çà Ðåëàòèâíà Ôðåêâåíöè¼à", xlab="Èíòåðâàëè", ylab="Ôðåêâåíöèè" )
-lines( tab_na_cestoti_close$frekvencii_close, tab_na_cestoti_close$relative_Freq, type="l", col="red", main="Ãðàôèê çà Ðåëàòèâíà Ôðåêâåíöè¼à", xlab="Èíòåðâàëè", ylab="Ôðåêâåíöèè" )
+plot( tab_na_cestoti_close$frekvencii_close, tab_na_cestoti_close$relative_Freq, type="b", col="red", main="Ð“Ñ€Ð°Ñ„Ð¸Ðº Ð·Ð° Ð ÐµÐ»Ð°Ñ‚Ð¸Ð²Ð½Ð° Ð¤Ñ€ÐµÐºÐ²ÐµÐ½Ñ†Ð¸Ñ˜Ð°", xlab="Ð˜Ð½Ñ‚ÐµÑ€Ð²Ð°Ð»Ð¸", ylab="Ð¤Ñ€ÐµÐºÐ²ÐµÐ½Ñ†Ð¸Ð¸" )
+lines( tab_na_cestoti_close$frekvencii_close, tab_na_cestoti_close$relative_Freq, type="l", col="red", main="Ð“Ñ€Ð°Ñ„Ð¸Ðº Ð·Ð° Ð ÐµÐ»Ð°Ñ‚Ð¸Ð²Ð½Ð° Ð¤Ñ€ÐµÐºÐ²ÐµÐ½Ñ†Ð¸Ñ˜Ð°", xlab="Ð˜Ð½Ñ‚ÐµÑ€Ð²Ð°Ð»Ð¸", ylab="Ð¤Ñ€ÐµÐºÐ²ÐµÐ½Ñ†Ð¸Ð¸" )
 # ------------------------------------------------------------------------------
 
 
@@ -118,7 +118,7 @@ stem_tab_cum_close <- stem( tab_na_cestoti_close$cumulative_freq )
 # -------------------------------------------------------------------------------------------
 
 # PRV DEL, zadaca 3 -------------------------------------------------------------------------
-zav_prvin_posledni_ceni <- plot( amzn$Open, amzn$Close, main="Êîîðåëàöè¼à ìåƒó ïî÷åòíè è êðà¼íè öåíè", xlab="Ïî÷åòíè öåíè", ylab="Êðà¼íè öåíè", col="red")
+zav_prvin_posledni_ceni <- plot( amzn$Open, amzn$Close, main="ÐšÐ¾Ð¾Ñ€ÐµÐ»Ð°Ñ†Ð¸Ñ˜Ð° Ð¼ÐµÑ“Ñƒ Ð¿Ð¾Ñ‡ÐµÑ‚Ð½Ð¸ Ð¸ ÐºÑ€Ð°Ñ˜Ð½Ð¸ Ñ†ÐµÐ½Ð¸", xlab="ÐŸÐ¾Ñ‡ÐµÑ‚Ð½Ð¸ Ñ†ÐµÐ½Ð¸", ylab="ÐšÑ€Ð°Ñ˜Ð½Ð¸ Ñ†ÐµÐ½Ð¸", col="red")
 # -------------------------------------------------------------------------------------------
 
 # PRV DEL, zadaca 4 -------------------------------------------------------------------------
@@ -193,13 +193,25 @@ interval_doverba( sample( amzn$Volume, size=1000 ) )
 
 # VTOR DEL, zadaca 2 ------------------------------------------------------------------------
 # hipotezi-----------------------------------
+# H0: EX = 7.5M
+# Ha: EX != 7.5M
+EX <- 7500000
+gr <- qnorm(1-alfa/2)   # se naogja granicata
+print( c(-1*gr, gr) )   # se pecati intervalot(leva i desna granica)
+z <- ( (mean(amzn$Volume-EX)) / sd(amzn$Volume) ) * sqrt(length(amzn$Volume))   # determinantna vrednost vo intervalot
 
+# proverka koja hipoteza e tocna
+if( z>(-1*gr) & z<gr ) {
+  print("H0: T")
+} else {
+  print("Ha: T")
+}
 # -------------------------------------------------------------------------------------------
 
 # VTOR DEL, zadaca 3 ------------------------------------------------------------------------
 # test za raspredelba------------------------
 png( file="raspredelba-volume.png" )
-hist(amzn$Volume, breaks=49, xlim=c(487000, 105000000), ylim=c(0, 1100), xlab="èíòåðâàëè", ylab="Ôðåêâåíöèè", main=" ")
+hist(amzn$Volume, breaks=49, xlim=c(487000, 105000000), ylim=c(0, 1100), xlab="Ð¸Ð½Ñ‚ÐµÑ€Ð²Ð°Ð»Ð¸", ylab="Ð¤Ñ€ÐµÐºÐ²ÐµÐ½Ñ†Ð¸Ð¸", main=" ")
 dev.off()
 # -------------------------------------------------------------------------------------------
 
