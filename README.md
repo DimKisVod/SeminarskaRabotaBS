@@ -37,3 +37,14 @@
 Според извршените анализи може јасно да се укаже дека со нивните бизнис стратегии/практики, раната доминантност во онлајн полето, како и новите иновации во областа на брз шипинг и онлајн услуги со сигурност може да се каже дека иднината на оваа компанија изгледа светла.
 
 
+``                                                                               `-/oydNNNNNNNNmy:  
+/dds/.`                                                                        `sdmmdddddddmNMMMMd` 
+ `+hNNmy+-.`                                                                    ````        .dMMMy` 
+    .+hNMMNdy+:.`                                                                 `.-+syy.   hMMN:  
+       ./ymMMMMNmhyo:-.`                                                   ``.:+shdNMMNd+`  :NMMs   
+          .-/omMMMMMMNNmhyo+:-.```                                ``.-:/oyhdmNMMMMMmh+-`   .mMMs`   
+              .:sdmMMMMMMMMMMNNmmmddhyysoo///////////////+ooooodddmmmNMMMMMMMMNmy+-.      `hMm+`    
+                 ``-+odmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNdyo:.`          +mo.      
+                      ``.:/oydmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmdhs+-.``               ``        
+                               ``.:+osshhhhdNNNNNNNNNNdhhyss++/:.``                                 
+
