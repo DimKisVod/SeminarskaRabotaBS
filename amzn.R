@@ -49,7 +49,7 @@ midcut<-function( x, from, to, by ){
   ## use the vector to map the names of the bins to the midpoint values
   unname(vec[x])
 }
-amzn$sredna_t_open = midcut( amzn$Open, round(min_open), round(max_open), round(opseg_open/10)+1 )
+amzn$sredna_t_open <- midcut( amzn$Open, round(min_open), round(max_open), round(opseg_open/10)+1 )
 --------------------------------------------------------------------------------
 
 
@@ -81,7 +81,7 @@ amzn$intervali_close <- cut( amzn$Open, seq_open )
 tab_na_cestoti_close <- transform( table(frekvencii_close) )
 
 # Sredna tocka od itnervalite(na Close kolonata)
-amzn$sredna_t_close = midcut( amzn$Close, round(min_close), round(max_close), round(gol_klasi_close) )
+amzn$sredna_t_close <- midcut( amzn$Close, round(min_close), round(max_close), round(gol_klasi_close) )
 # --------------------------------------------------------------------------------
 
 
@@ -129,20 +129,20 @@ sort( table(tab_na_cestoti_open$Freq), decreasing=TRUE )
 # -------------------------------------------------------------------------------------------
 
 # PRV DEL, zadaca 5 -------------------------------------------------------------------------
-q1_open <- quantile( amzn$Open, 0.25 )     # Q1 od pocetna cena na akcii
-q2_open <- median( amzn$Open )             # Q2 od pocetna cena na akcii
-q3_open <- quantile( amzn$Open, 0.75 )     # Q3 od pocetna cena na akcii
+q1_open <- quantile( amzn$Open, 0.25 )                      # Q1 od pocetna cena na akcii
+q2_open <- median( amzn$Open )                              # Q2 od pocetna cena na akcii
+q3_open <- quantile( amzn$Open, 0.75 )                      # Q3 od pocetna cena na akcii
 
-q1_close <- quantile( amzn$Close, 0.25 )   # Q1 od krajna cena na akcii
-q2_close <- median( amzn$Close )           # Q2 od krajna cena na akcii
-q3_close <- quantile( amzn$Close, 0.75 )   # Q3 od krajna cena na akcii
+q1_close <- quantile( amzn$Close, 0.25 )                    # Q1 od krajna cena na akcii
+q2_close <- median( amzn$Close )                            # Q2 od krajna cena na akcii
+q3_close <- quantile( amzn$Close, 0.75 )                    # Q3 od krajna cena na akcii
 
-raspon_open <- max(amzn$Open) - min(amzn$Open)     # raspon za prvicnite ceni na akciite
-raspon_close <- max(amzn$Close) - min(amzn$Close)  # raspon za krajnite ceni na akciite
+raspon_open <- max(amzn$Open) - min(amzn$Open)              # raspon za prvicnite ceni na akciite
+raspon_close <- max(amzn$Close) - min(amzn$Close)           # raspon za krajnite ceni na akciite
 
-interkvart_open <- q3_open - q1_open          # Q3 - Q1
+interkvart_open <- q3_open - q1_open                        # Q3 - Q1
 print( paste( "IQR_Open = ", intervali_open ) )
-interkvart_close <- q3_close - q1_close       # Q3 - Q1
+interkvart_close <- q3_close - q1_close                     # Q3 - Q1
 print( paste( "IQR_Close = ", intervali_close ) )
 
 # -------------------------------------------------------------------------------------------
@@ -196,8 +196,8 @@ interval_doverba( sample( amzn$Volume, size=1000 ) )
 # H0: EX = 7.5M
 # Ha: EX != 7.5M
 EX <- 7500000
-gr <- qnorm(1-alfa/2)   # se naogja granicata
-print( c(-1*gr, gr) )   # se pecati intervalot(leva i desna granica)
+gr <- qnorm(1-alfa/2)                                                           # se naogja granicata
+print( c(-1*gr, gr) )                                                           # se pecati intervalot(leva i desna granica)
 z <- ( (mean(amzn$Volume-EX)) / sd(amzn$Volume) ) * sqrt(length(amzn$Volume))   # determinantna vrednost vo intervalot
 
 # proverka koja hipoteza e tocna
